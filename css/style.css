@@ -8,14 +8,12 @@
    debug
 ============== */
 body {
-   height: 400vh;
+   height: 500vh;
 }
 header {
    border: 2px dashed rgb(246, 14, 14);
 }
 section {
-   border: 2px dashed lightseagreen;
-   background-color: lightgray;
 }
 
 /* ===========
@@ -68,12 +66,40 @@ header.flex-box {
 /* ===========
    main
 ============== */
+main section {
+   padding: 25px 0;
+}
 
 /* sezione piano business */
 main section:first-of-type {
    padding-top: 150px;
 }
+main .inline-list > .radio-check {
+   margin-inline-end: 30px; /*overrido la regola-base nel core.css*/
+}
+
+.business-plans.flex-box {
+   justify-content: space-between;
+   margin: 0 -10px; /* -10px pk allineo i margin dei flex-items*/
+}
+
+/* col piani-business */
+.business-plans h5,
+.col-content {
+   border: 1px solid lightgray;
+}
+.col-content {
+   border-top: none;
+}
+.business-plans > .col {
+   width: calc(100% / 3 - 20px);
+   margin: 0 10px;
+}
+.business-plans h5 {
+   font-weight: normal;
+   text-align: center;
+}
 
 /* ===========
    footer
-============== */
+============== */ ;

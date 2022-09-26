@@ -14,10 +14,6 @@
    max-width: 980px;
 }
 
-.flex-box {
-   display: flex;
-}
-
 .width40 {
    width: 40%;
 }
@@ -28,6 +24,10 @@
 /* =============
    utilities
 ================ */
+.flex-box {
+   display: flex;
+}
+
 .inline-list {
    display: flex;
    align-items: center;
