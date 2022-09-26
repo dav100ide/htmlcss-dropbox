@@ -26,6 +26,7 @@
 ================ */
 .flex-box {
    display: flex;
+   justify-content: space-between;
 }
 
 .inline-list {
@@ -72,4 +73,6 @@ h3 {
 }
 
 .btn-secondary {
+   background-color: white;
+   border-width: 1.5px;
 }

@@ -11,9 +11,13 @@ body {
    height: 500vh;
 }
 header {
-   border: 2px dashed rgb(246, 14, 14);
+   border: 2px dashed rgb(99, 214, 21);
 }
-section {
+main section {
+   padding: 25px 0;
+}
+section:not(.hero) {
+   border: 2px dashed red;
 }
 
 /* ===========
@@ -28,9 +32,7 @@ header {
    right: 0;
    z-index: 6969;
 }
-header.flex-box {
-   justify-content: space-between;
-}
+
 /* ===========
    hero
 ============== */
@@ -67,7 +69,6 @@ header.flex-box {
    main
 ============== */
 main section {
-   padding: 25px 0;
 }
 
 /* sezione piano business */
@@ -78,8 +79,7 @@ main .inline-list > .radio-check {
    margin-inline-end: 30px; /*overrido la regola-base nel core.css*/
 }
 
-.business-plans.flex-box {
-   justify-content: space-between;
+.business-plans {
    margin: 0 -10px; /* -10px pk allineo i margin dei flex-items*/
    padding: 40px 0;
 }
@@ -111,6 +111,20 @@ small.price {
 small.price-info {
    color: gray;
 }
+
+/* sezione partners */
+.partners .width60 {
+   padding-right: 75px;
+}
+
+.partners .width40 {
+   padding: 40px 65px 0 0;
+}
+
+.partners .width40 :where(h3, p) {
+   margin-bottom: 20px;
+}
+
 /* ===========
    footer
 ============== */
