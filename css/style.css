@@ -13,6 +13,10 @@ body {
 header {
    border: 2px dashed rgb(246, 14, 14);
 }
+section {
+   border: 2px dashed lightseagreen;
+   background-color: lightgray;
+}
 
 /* ===========
    header
@@ -64,6 +68,11 @@ header.flex-box {
 /* ===========
    main
 ============== */
+
+/* sezione piano business */
+main section:first-of-type {
+   padding-top: 150px;
+}
 
 /* ===========
    footer
