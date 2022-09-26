@@ -81,25 +81,36 @@ main .inline-list > .radio-check {
 .business-plans.flex-box {
    justify-content: space-between;
    margin: 0 -10px; /* -10px pk allineo i margin dei flex-items*/
+   padding: 40px 0;
 }
 
 /* col piani-business */
+.business-plans > .col {
+   width: calc(100% / 3 - 20px);
+   margin: 0 10px;
+}
 .business-plans h5,
 .col-content {
    border: 1px solid lightgray;
 }
 .col-content {
    border-top: none;
-}
-.business-plans > .col {
-   width: calc(100% / 3 - 20px);
-   margin: 0 10px;
+   padding: 30px;
 }
 .business-plans h5 {
    font-weight: normal;
    text-align: center;
+   padding: 0.5em 0;
 }
-
+.col-content small {
+   display: block;
+}
+small.price {
+   font-weight: bold;
+}
+small.price-info {
+   color: gray;
+}
 /* ===========
    footer
-============== */ ;
+============== */
