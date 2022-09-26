@@ -73,23 +73,26 @@ main section {
 
 /* sezione piano business */
 main section:first-of-type {
-   padding-top: 150px;
+   padding-top: 130px;
 }
 main .inline-list > .radio-check {
    margin-inline-end: 30px; /*overrido la regola-base nel core.css*/
 }
-
-.business-plans {
-   margin: 0 -10px; /* -10px pk allineo i margin dei flex-items*/
-   padding: 40px 0;
+.business-plan {
+   margin: 50px 0;
+}
+.business-plan.flex-box {
+   margin-inline: -10px;
+   /* -10px pk allineo i margin dei flex-items*/
 }
 
-/* col piani-business */
-.business-plans > .col {
+/* piani-business */
+
+.business-plan > .col {
    width: calc(100% / 3 - 20px);
    margin: 0 10px;
 }
-.business-plans h5,
+.business-plan h5,
 .col-content {
    border: 1px solid lightgray;
 }
@@ -97,11 +100,16 @@ main .inline-list > .radio-check {
    border-top: none;
    padding: 30px;
 }
-.business-plans h5 {
+.business-plan h5 {
    font-weight: normal;
    text-align: center;
    padding: 0.5em 0;
 }
+/* col content  */
+.col-content h3 {
+   margin-bottom: 15px;
+}
+
 .col-content small {
    display: block;
 }
@@ -110,8 +118,35 @@ small.price {
 }
 small.price-info {
    color: gray;
+   margin: 15px 0 50px;
 }
-
+.col-content li:not(:last-of-type) {
+   margin-bottom: 15px;
+}
+.col-content .btn {
+   width: 100%;
+   margin: 40px 0 30px;
+}
+.col-content small:last-of-type {
+   margin-bottom: 30px;
+}
+.col-content small > a {
+   color: #7f7ff6;
+   text-decoration: underline;
+}
+.col-content hr {
+   width: 20%;
+}
+.col-content h6 {
+   font-size: 14px;
+   margin: 40px 0 20px;
+}
+/* la checked list è nel core.css ====> utilities */
+.business-plan .width40:has(> .btn) {
+   padding-left: 85px;
+   /*seleziona la classe .width40 che ha come figlio diretto .btn
+   ovvero il contenitore del bottone del piano aziendale "orizzontale"*/
+}
 /* sezione partners */
 .partners .width60 {
    padding-right: 75px;

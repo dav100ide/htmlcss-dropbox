@@ -21,6 +21,10 @@
 .width60 {
    width: 60%;
 }
+
+i {
+   margin-inline-end: 5px;
+}
 /* =============
    utilities
 ================ */
@@ -39,6 +43,13 @@
 
 .fluid-img {
    max-width: 100%;
+}
+.checked-list li::before {
+   /* il simbolo ✅ davanti ai li */
+   content: "\2713";
+   margin-inline-end: 5px;
+   font-weight: bold;
+   color: #0061ff;
 }
 /* ===========
   typography
