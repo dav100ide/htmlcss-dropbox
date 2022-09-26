@@ -9,17 +9,36 @@
 ============== */
 body {
    background-color: darkolivegreen;
+   height: 400vh;
+}
+header {
+   border: 2px dashed rgb(246, 14, 14);
 }
 
 /* ===========
    header
 ============== */
-header.flex-box {
-   display: flex;
-   justify-content: space-between;
+header {
    padding: 25px 15px;
-   background-color: violet;
+   position: sticky;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 6969;
 }
+header.flex-box {
+   justify-content: space-between;
+}
+/* ===========
+   hero
+============== */
+.hero {
+   background-color: #b4d0e7;
+}
+.hero h1 {
+   font-size: 55px;
+}
+
 /* ===========
    main
 ============== */

@@ -7,17 +7,27 @@
 }
 
 .big-container {
-   max-width: 1200px;
+   max-width: 1050px;
 }
 
 .small-container {
-   max-width: 1000px;
+   max-width: 980px;
 }
 
 .flex-box {
    display: flex;
 }
 
+.width40 {
+   width: 40%;
+}
+
+.width60 {
+   width: 60%;
+}
+/* =============
+   utilities
+================ */
 .inline-list {
    display: flex;
    align-items: center;
@@ -32,14 +42,24 @@
 /* ===========
   typography
 ============== */
-
+body {
+   font-family: "Open Sans", sans-serif;
+}
 /* ===========
    buttons
 ============== */
 .btn {
+   padding: 0.5em 1em;
+}
+.btn:hover {
+   opacity: 0.8;
+   cursor: pointer;
 }
 
 .btn-primary {
+   background-color: #0061ff;
+   color: white;
+   border: none;
 }
 
 .btn-secondary {
