@@ -4,3 +4,26 @@
 /* ===========
    macro-aree
 ============== */
+/* ===========
+   debug
+============== */
+body {
+   background-color: darkolivegreen;
+}
+
+/* ===========
+   header
+============== */
+header.flex-box {
+   display: flex;
+   justify-content: space-between;
+   padding: 25px 15px;
+   background-color: violet;
+}
+/* ===========
+   main
+============== */
+
+/* ===========
+   footer
+============== */
