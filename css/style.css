@@ -184,14 +184,41 @@ small.price-info {
 .small-square {
    width: 50%;
    height: 50%;
-   background-color: rgb(197, 114, 36);
-   border: 1px solid brown;
+   padding: 3.5vw;
+}
+.small-square > img {
+   filter: invert(100%);
 }
 .small-square.flex-box {
-   justify-content: center;
    align-items: center;
 }
+.designit {
+   background-color: #a2d39b;
+   box-shadow: inset 0 0 0 1vw #d1e9cd;
+}
+.asu {
+   background-color: #61082b;
+}
 
+.uf {
+   background-color: #0093ce;
+}
+
+.topps {
+   background-color: #ff1c1c;
+}
+.world-bicycle {
+   background-color: #d5001f;
+}
+.hearst {
+   background-color: #c7d2b9;
+}
+.lonely-planet {
+   background-color: #0d2481;
+}
+.clear {
+   background-color: #ffd830;
+}
 /* sezione prova gratuita */
 #free-trial {
 }
