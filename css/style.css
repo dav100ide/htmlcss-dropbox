@@ -8,7 +8,7 @@
    debug
 ============== */
 body {
-   height: 500vh;
+   height: 900vh;
 }
 /* header {
    border: 2px dashed rgb(99, 214, 21);
@@ -68,7 +68,6 @@ header {
 main section {
 }
 
-/* sezione piano business */
 main section:first-of-type {
    padding-top: 130px;
 }
@@ -78,25 +77,29 @@ main .inline-list > .radio-check {
 .business-plan {
    margin: 50px 0;
 }
-.business-plan.flex-box {
+
+.flex-box:has(.col) {
    margin-inline: -10px;
    /* -10px pk allineo i margin dei flex-items*/
 }
 
-/* piani-business */
-
-.business-plan > .col {
+.col {
    width: calc(100% / 3 - 20px);
    margin: 0 10px;
 }
-.business-plan h5,
-.col-content {
+
+/* piani-business */
+.inline-list:has(.radio-check) {
+   margin-top: 45px;
+}
+.business-plan :where(h5, .col-content) {
    border: 1px solid lightgray;
 }
 .col-content {
    border-top: none;
    padding: 30px;
 }
+
 .business-plan h5 {
    font-weight: normal;
    text-align: center;
@@ -160,7 +163,10 @@ small.price-info {
 .partners .width40 :where(h3, p) {
    margin-bottom: 20px;
 }
-
+/* sezione operazioni */
+.operations > .flex-box {
+   flex-wrap: wrap;
+}
 /* ===========
    footer
 ============== */
