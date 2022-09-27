@@ -255,6 +255,12 @@ footer {
    color: white;
    padding-top: 90px;
 }
+footer::after {
+   content: "";
+   display: block;
+   height: 1px;
+   background-color: white;
+}
 /* footer top */
 .small-col {
    width: calc(100% / 5 - 50px);
