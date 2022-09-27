@@ -1,22 +1,7 @@
 @import url(reset.css);
 @import url(core.css);
 
-/* ===========
-   macro-aree
-============== */
-/* ===========
-   debug
-============== */
-
-main section {
-   padding: 25px 0;
-}
-section:not(.hero, #clients) {
-   border: 2px dashed lightseagreen;
-}
-header {
-   display: none !important;
-}
+/* ------------macro aree----------------------- */
 /* ===========
    header
 ============== */
@@ -63,16 +48,29 @@ header {
    main
 ============== */
 main section {
+   padding: 60px 0;
 }
 
 main section:first-of-type {
    padding-top: 130px;
 }
+section#discover-more {
+   padding-bottom: 130px;
+}
+section#clients {
+   padding: 0;
+}
+section#free-trial {
+   padding: 130px 0;
+}
+section#faq {
+   padding: 160px 0;
+}
 main .inline-list > .radio-check {
    margin-inline-end: 30px; /*overrido la regola-base nel core.css*/
 }
 .business-plan {
-   margin: 50px 0;
+   margin-top: 50px;
 }
 
 .flex-box:has(.col) {
@@ -174,7 +172,6 @@ small.price-info {
 }
 /* sezione clienti */
 .big-square {
-   border: 1px solid red;
    width: calc(100vw / 3);
    height: calc(100vw / 3);
 }
@@ -199,11 +196,9 @@ small.price-info {
 .asu {
    background-color: #61082b;
 }
-
 .uf {
    background-color: #0093ce;
 }
-
 .topps {
    background-color: #ff1c1c;
 }
@@ -224,10 +219,32 @@ small.price-info {
    overflow-y: auto;
 }
 #central-square > :not(:first-child, :last-child) {
-   margin-block: 2.5vw;
+   margin: 2.5vw 0;
 }
 /* sezione prova gratuita */
 #free-trial {
+   background-color: #b4d0e7;
+   padding: 130px 0;
+}
+
+#free-trial h2 {
+   color: #61214f;
+}
+#free-trial .btn {
+   border: none;
+   align-self: flex-start;
+}
+
+/* sezione faq */
+#faq h2 {
+   margin-bottom: 40px;
+}
+.question-box {
+   padding: 40px 40px 40px 0;
+   border-bottom: 1px solid lightgray;
+}
+.question-box:first-of-type {
+   border-top: 1px solid lightgray;
 }
 
 /* ===========
