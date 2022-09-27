@@ -253,8 +253,9 @@ small.price-info {
 footer {
    background-color: black;
    color: white;
-   padding: 100px 0 50px;
+   padding-top: 90px;
 }
+/* footer top */
 .small-col {
    width: calc(100% / 5 - 50px);
    margin: 0 25px; /*gutter*/
@@ -270,4 +271,13 @@ footer {
 
 .small-col li:not(:last-of-type) {
    margin-bottom: 15px;
+}
+/* footer down */
+.footer-down {
+   margin-top: 70px;
+}
+.language {
+   width: 15%;
+   padding: 50px 0;
+   border-top: 1px solid white;
 }
