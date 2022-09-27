@@ -7,16 +7,11 @@
 /* ===========
    debug
 ============== */
-body {
-   height: 900vh;
-}
-/* header {
-   border: 2px dashed rgb(99, 214, 21);
-} */
+
 main section {
    padding: 25px 0;
 }
-section:not(.hero) {
+section:not(.hero, #clients) {
    border: 2px dashed lightseagreen;
 }
 
@@ -85,7 +80,7 @@ main .inline-list > .radio-check {
 
 .col {
    width: calc(100% / 3 - 20px);
-   margin: 0 10px;
+   margin: 0 10px; /*gutter dei flex-item*/
 }
 
 /* piani-business */
@@ -164,9 +159,43 @@ small.price-info {
    margin-bottom: 20px;
 }
 /* sezione operazioni */
-.operations > .flex-box {
+#operations > .flex-box {
    flex-wrap: wrap;
 }
+/* sezione scopri di più */
+#discover-more a {
+   display: inline-block;
+   margin-top: 35px;
+   font-size: 14px;
+   color: #3366cc;
+   text-decoration: underline;
+}
+/* sezione clienti */
+#clients {
+}
+.big-square {
+   border: 1px solid red;
+   width: calc(100vw / 3);
+   height: calc(100vw / 3);
+}
+.big-square.flex-box {
+   flex-wrap: wrap;
+}
+.small-square {
+   width: 50%;
+   height: 50%;
+   background-color: rgb(197, 114, 36);
+   border: 1px solid brown;
+}
+.small-square.flex-box {
+   justify-content: center;
+   align-items: center;
+}
+
+/* sezione prova gratuita */
+#free-trial {
+}
+
 /* ===========
    footer
 ============== */
