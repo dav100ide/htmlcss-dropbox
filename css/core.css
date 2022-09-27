@@ -30,6 +30,8 @@ i {
 ================ */
 .flex-box {
    display: flex;
+}
+.content-between {
    justify-content: space-between;
 }
 

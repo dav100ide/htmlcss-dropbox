@@ -10,14 +10,14 @@
 body {
    height: 500vh;
 }
-header {
+/* header {
    border: 2px dashed rgb(99, 214, 21);
-}
+} */
 main section {
    padding: 25px 0;
 }
 section:not(.hero) {
-   border: 2px dashed red;
+   border: 2px dashed lightseagreen;
 }
 
 /* ===========
@@ -38,25 +38,22 @@ header {
 ============== */
 .hero {
    background-color: #b4d0e7;
-   padding-top: 60px;
+   padding-top: 40px;
 }
+
 .hero h1 {
    font-size: 55px;
 }
-.hero.flex-box {
-   justify-content: space-around;
-}
+
 .hero .width40 .btn {
    margin: 35px 0;
 }
 
-.hero .width60 {
+.hero .flex-box {
    position: relative;
-   top: 70px;
+   bottom: -70px;
 }
-.hero .width40 p:first-of-type {
-   margin-top: 70px;
-}
+
 .hero .width40 p:last-of-type {
    margin-bottom: 35px;
 }
@@ -141,10 +138,14 @@ small.price-info {
    font-size: 14px;
    margin: 40px 0 20px;
 }
+.col-content li {
+   display: flex;
+   align-items: baseline;
+}
 /* la checked list è nel core.css ====> utilities */
-.business-plan .width40:has(> .btn) {
+.business-plan .width40:has(.btn) {
    padding-left: 85px;
-   /*seleziona la classe .width40 che ha come figlio diretto .btn
+   /*seleziona la classe .width40 che ha come figlio .btn
    ovvero il contenitore del bottone del piano aziendale "orizzontale"*/
 }
 /* sezione partners */
