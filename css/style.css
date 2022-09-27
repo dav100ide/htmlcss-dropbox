@@ -14,7 +14,9 @@ main section {
 section:not(.hero, #clients) {
    border: 2px dashed lightseagreen;
 }
-
+header {
+   display: none !important;
+}
 /* ===========
    header
 ============== */
@@ -171,8 +173,6 @@ small.price-info {
    text-decoration: underline;
 }
 /* sezione clienti */
-#clients {
-}
 .big-square {
    border: 1px solid red;
    width: calc(100vw / 3);
@@ -218,6 +218,13 @@ small.price-info {
 }
 .clear {
    background-color: #ffd830;
+}
+#central-square {
+   padding: 2vw;
+   overflow-y: auto;
+}
+#central-square > :not(:first-child, :last-child) {
+   margin-block: 2.5vw;
 }
 /* sezione prova gratuita */
 #free-trial {
