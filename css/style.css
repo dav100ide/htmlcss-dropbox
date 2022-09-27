@@ -250,3 +250,24 @@ small.price-info {
 /* ===========
    footer
 ============== */
+footer {
+   background-color: black;
+   color: white;
+   padding: 100px 0 50px;
+}
+.small-col {
+   width: calc(100% / 5 - 50px);
+   margin: 0 25px; /*gutter*/
+}
+
+.flex-box:has(.small-col) {
+   margin: 0 -25px;
+   /* allineamento container-gutter */
+}
+.footer-top h3 {
+   margin-bottom: 25px;
+}
+
+.small-col li:not(:last-of-type) {
+   margin-bottom: 15px;
+}
