@@ -221,7 +221,7 @@ small.price-info {
    overflow-y: auto;
 }
 #central-square hr {
-   width: 1#%;
+   width: 18%;
 }
 #central-square > :not(:first-child, :last-child) {
    margin: 2.5vw 0;
