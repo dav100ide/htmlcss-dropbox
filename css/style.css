@@ -148,15 +148,15 @@ small.price-info {
    ovvero il contenitore del bottone del piano aziendale "orizzontale"*/
 }
 /* sezione partners */
-.partners .width60 {
+#partners .width60 {
    padding-right: 75px;
 }
 
-.partners .width40 {
+#partners .width40 {
    padding: 40px 65px 0 0;
 }
 
-.partners .width40 :where(h3, p) {
+#partners .width40 :where(h3, p) {
    margin-bottom: 20px;
 }
 /* sezione operazioni */
