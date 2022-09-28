@@ -13,6 +13,7 @@ header {
    left: 0;
    right: 0;
    z-index: 6969;
+   box-shadow: 1px 0 2px 1px gray;
 }
 
 /* ===========
@@ -193,6 +194,7 @@ small.price-info {
    background-color: #a2d39b;
    box-shadow: inset 0 0 0 1vw #d1e9cd;
 }
+/* colori quadrati clienti */
 .asu {
    background-color: #61082b;
 }
